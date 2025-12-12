@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshan Flora - Testimonials</title>
+    <style>
+        /* ===== HEADER ===== */
+        header {
+  width: 100%;
+  background: linear-gradient(90deg, #7d5fff, #5a8dee);
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+body {
+            
+            font-family: 'Georgia', serif;
+ 
+            background: linear-gradient(
+        to bottom,
+        #ce89f9 100%
+  );
+}
+
+/* Navbar Container */
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Menu Links */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.menu li a:hover {
+  color: #ffe9ff;
+}
+
+/* Contact Button */
+.btn {
+  background: white;
+  color: #5a40d0;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+  background: #f0f0ff;
+}
+
+/* Top section spacing so content doesn't hide behind fixed header */
+body {
+  padding-top: 100px;
+}
+
+            .testimonials-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+
+            .testimonial-card {
+                background: #f9f9f9;
+                padding: 2rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                text-align: center;
+            }
+
+            .testimonial-text {
+                font-style: italic;
+                color: #555;
+            }
+
+            .testimonial-author {
+                margin-top: 1rem;
+                font-weight: bold;
+                color: #333;
+            }
+
+            .testimonial-rating {
+                margin-top: 0.5rem;
+                color: #ffcc00;
+                font-size: 1.2rem;
+            }
+            /* ===== FOOTER ===== */
+footer {
+    background: #2d3748;
+    color: white;
+    padding: 3rem 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+    color: #667eea;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background: #667eea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #444;
+    color: #ccc;
+}
+        </style>
+        </head>
+    
+
+    <body>
+<!-- Testimonials Section -->
+ <header>
+  <nav class="navbar">
+    <div class="logo">Lakshan Flora</div>
+    <ul class="menu">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a class="btn" href="contact.html">Get In Touch</a>
+  </nav>
+</header>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Lakshan Flora made our wedding day absolutely magical! The floral arrangements were beyond our expectations. Every detail was perfect, and our guests couldn't stop complimenting the beautiful flowers.</p>
+                    <p class="testimonial-author">- Shalini & Kasun</p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">Professional, creative, and reliable! They delivered exactly what we needed for our corporate event. The centerpieces were elegant and perfectly matched our brand colors. Highly recommended!</p>
+                    <p class="testimonial-author">- Tech Solutions Inc.</p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">I order flowers from Lakshan Flora regularly, and they never disappoint. The quality is consistently excellent, delivery is always on time, and the customer service is outstanding.</p>
+                    <p class="testimonial-author">- Priya Fernando</p>
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+
+        <div class="footer-section">
+            <h3>About Lakshan Flora</h3>
+            <p>Beautiful floral arrangements crafted with love for every occasion.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li>📞 +94 71 234 5678</li>
+                <li>📧 lakshanflora@gmail.com</li>
+                <li>📍 Main Street, Sri Lanka</li>
+            </ul>
+
+            <p>Follow us on social media for updates and inspiration</p>
+
+  <div class="social-icons">
+    <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://x.com/ " target="_blank" rel="noopener" aria-label="Twitter" title="Twitter">
+      <i class="fab fa-twitter"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+</div>
+
+    <div class="footer-bottom">
+        © 2025 Lakshan Flora. All Rights Reserved.
+    </div>
+</footer>
+    </section>
+    </body>
+    </html>
