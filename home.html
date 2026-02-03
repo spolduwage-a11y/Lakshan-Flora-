@@ -1,413 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lakshan Flora - Beautiful Floral Arrangements</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakshan Flora – Beautiful Floral Arrangements</title>
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Georgia', serif;
-            line-height: 1.6;
-            color: #333;
-        }
-            
-    #gallery::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: url("covergallery.png") center/cover no-repeat;
-      filter: blur(3px);
-      opacity: 0.35;
-      z-index: -1;
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-        /* Header */
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+    body {
+      font-family: 'Georgia', serif;
+      line-height: 1.6;
+      color: #333;
+    }
 
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    /* ================= HEADER ================= */
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+    .header-content {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-        .logo-icon {
-  width: 45px;      
-  height: 45px;
-  object-fit: cover;
-  border-radius: 50%; 
-}
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-        }
+    .logo-icon {
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
 
-        nav a:hover {
-            opacity: 0.7;
-        }
+    .logo h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
 
-        /* HERO SECTION */
-        .hero {
-            background:
-                linear-gradient(rgba(102,126,234,0.80), rgba(118,75,162,0.80)),
-                url("flowersback.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
 
-            padding: 7rem 2rem;
-            text-align: center;
-            color: white;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
 
-        .hero h2 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
+    nav a:hover {
+      opacity: 0.7;
+    }
 
-        .hero p {
-            font-size: 1.3rem;
-            max-width: 700px;
-            margin: 0 auto 2rem auto;
-        }
+    /* ================= HERO ================= */
+    .hero {
+      background:
+        linear-gradient(rgba(102,126,234,0.8), rgba(118,75,162,0.8)),
+        url("flowersback.png") center/cover no-repeat;
+      padding: 7rem 2rem;
+      text-align: center;
+      color: white;
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            background: white;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: 0.3s;
-        }
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
 
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-        }
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      margin: auto auto 2rem;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
+    .btn {
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      background: white;
+      color: #667eea;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
 
-        .section-title {
-            text-align: center;
-            font-size: 2.6rem;
-            font-weight: bold;
-            color: #030c22;
-            margin-bottom: 2.5rem;
-        }
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
 
-        
+    /* ================= COMMON ================= */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
 
-        /* FEATURES */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
+    .section-title {
+      text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 2.5rem;
+      color: #030c22;
+    }
 
-        .feature-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
+    /* ================= FEATURES ================= */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
 
-        .feature-card:hover {
-            transform: translateY(-10px);
-        }
+    .feature-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
 
-        .feature-img {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
 
-        /* EVENTS */
-        .events-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
+    .feature-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
 
-        .event-card {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: 0.3s;
-            overflow: hidden;
-        }
+    /* ================= EVENTS ================= */
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
 
-        .event-card:hover {
-            transform: scale(1.05);
-        }
+    .event-card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      will-change: transform;
+    }
 
-        .event-image {
-            width: 100%;
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-        }
+    .event-card:hover {
+      transform: scale(1.05);
+    }
 
-        .event-content {
-            padding: 1.5rem;
-        }
+    .event-image {
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
 
-        .event-content h3 {
-            color: #667eea;
-        }
+    .event-content {
+      padding: 1.5rem;
+    }
 
-        .event-date {
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
+    .event-content h3 {
+      color: #667eea;
+    }
 
-        /* FOOTER */
-        footer {
-            background: #2d3748;
-            color: white;
-            padding: 3rem 2rem 1rem;
-            margin-top: 4rem;
-        }
+    .event-date {
+      font-size: 0.9rem;
+      color: #888;
+      margin-bottom: 1rem;
+    }
 
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
+    /* ================= FOOTER ================= */
+    footer {
+      background: #2d3748;
+      color: white;
+      padding: 3rem 2rem 1rem;
+    }
 
-        .footer-section h3 {
-            margin-bottom: 1rem;
-            color: #667eea;
-        }
+    .footer-content {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
 
-        .footer-section ul {
-            list-style: none;
-        }
+    .footer-section h3 {
+      margin-bottom: 1rem;
+      color: #667eea;
+    }
 
-        .footer-section a {
-            color: #ccc;
-            text-decoration: none;
-        }
+    .footer-section ul {
+      list-style: none;
+    }
 
-        .footer-section a:hover {
-            color: white;
-        }
+    .footer-section a {
+      color: #ccc;
+      text-decoration: none;
+    }
 
-        .social-icons {
-            margin-top: 1rem;
-            display: flex;
-            gap: 1rem;
-        }
+    .footer-section a:hover {
+      color: white;
+    }
 
-        .social-icons a {
-            width: 40px;
-            height: 40px;
-            background: #667eea;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 18px;
-        }
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
 
-        .footer-bottom {
-            margin-top: 2rem;
-            text-align: center;
-            border-top: 1px solid #444;
-            padding-top: 1rem;
-            color: #ccc;
-        }
-    </style>
+    .social-icons a {
+      width: 40px;
+      height: 40px;
+      background: #667eea;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 2rem;
+      border-top: 1px solid #444;
+      padding-top: 1rem;
+      color: #ccc;
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                 <img src="logo.png" alt="Lakshan Flora Logo" class="logo-icon">
-                <h1>Lakshan Flora</h1>
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero -->
-    <section class="hero">
-        <h2>Bringing Beauty to Every Occasion</h2>
-        <p>Exquisite floral arrangements crafted with passion and creativity for your special moments</p>
-        <a href="contact.html" class="btn">Get In Touch</a>
-    </section>
-
-   
-
-    <!-- Features -->
-    <div class="container"> 
-        <h2 class="section-title">Why Choose Lakshan Flora</h2>
-
-        <div class="features-grid">
-            <div class="feature-card">
-                <img src="artisticdesign.png" class="feature-img">
-                <h3>Artistic Designs</h3>
-                <p>Each arrangement is a unique masterpiece.</p>
-            </div>
-
-            <div class="feature-card">
-                <img src="freshflowers.png" class="feature-img">
-                <h3>Fresh Flowers</h3>
-                <p>We use only the freshest flowers.</p>
-            </div>
-
-            <div class="feature-card">
-                <img src="fastdelivery.png" class="feature-img">
-                <h3>Fast Delivery</h3>
-                <p>Fast, reliable delivery every time.</p>
-            </div>
-
-            <div class="feature-card">
-                <img src="customorders2.png" class="feature-img">
-                <h3>Custom Orders</h3>
-                <p>We create arrangements exactly how you want.</p>
-            </div>
-        </div>
+<!-- HEADER -->
+<header>
+  <div class="header-content">
+    <div class="logo">
+      <img src="logo.png" alt="Lakshan Flora Logo" class="logo-icon">
+      <h1>Lakshan Flora</h1>
     </div>
 
-    <!-- Events -->
-    <div class="container">
-        <h2 class="section-title">Recent Events We've Covered</h2>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-        <div class="events-grid">
+<!-- HERO -->
+<section class="hero">
+  <h2>Bringing Beauty to Every Occasion</h2>
+  <p>Exquisite floral arrangements crafted with passion and creativity</p>
+  <a href="#" class="btn">Get In Touch</a>
+</section>
 
-            <div class="event-card">
-                <div class="event-image" style="background-image:url('weddingdecoration.png');"></div>
-                <div class="event-content">
-                    <h3>Elegant Wedding</h3>
-                    <p class="event-date">November 15, 2025</p>
-                    <p>Romantic wedding designs full of beauty.</p>
-                </div>
-            </div>
-
-            <div class="event-card">
-                <div class="event-image" style="background-image:url('coparateevent.png');"></div>
-                <div class="event-content">
-                    <h3>Corporate Gala</h3>
-                    <p class="event-date">November 10, 2025</p>
-                    <p>Professional modern floral setups.</p>
-                </div>
-            </div>
-
-            <div class="event-card">
-                <div class="event-image" style="background-image:url('birthdaycelebration.png');"></div>
-                <div class="event-content">
-                    <h3>Birthday Celebration</h3>
-                    <p class="event-date">November 5, 2025</p>
-                    <p>Colorful and joyful flower arrangements.</p>
-                </div>
-            </div>
-
-        </div>
+<!-- FEATURES -->
+<div class="container">
+  <h2 class="section-title">Why Choose Lakshan Flora</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <img src="artisticdesign.png" class="feature-img" alt="Artistic Designs">
+      <h3>Artistic Designs</h3>
+      <p>Each arrangement is a masterpiece.</p>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
+    <div class="feature-card">
+      <img src="freshflowers.png" class="feature-img" alt="Fresh Flowers">
+      <h3>Fresh Flowers</h3>
+      <p>Only the freshest blooms.</p>
+    </div>
 
-            <div class="footer-section">
-                <h3>About Lakshan Flora</h3>
-                <p>Beautiful floral arrangements crafted with care and creativity.</p>
-            </div>
+    <div class="feature-card">
+      <img src="fastdelivery.png" class="feature-img" alt="Fast Delivery">
+      <h3>Fast Delivery</h3>
+      <p>On-time, every time.</p>
+    </div>
 
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
+    <div class="feature-card">
+      <img src="customorders2.png" class="feature-img" alt="Custom Orders">
+      <h3>Custom Orders</h3>
+      <p>Designed just for you.</p>
+    </div>
+  </div>
+</div>
 
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <ul>
-                    <li>📍 No. 25, Main Street, Your City</li>
-                    <li>📞 +94 72 345 6789</li>
-                    <li>📧 lakshanflora@gmail.com</li>
-                </ul>
+<!-- EVENTS -->
+<div class="container">
+  <h2 class="section-title">Recent Events</h2>
+  <div class="events-grid">
+    <div class="event-card">
+      <div class="event-image" style="background-image:url('weddingdecoration.png')"></div>
+      <div class="event-content">
+        <h3>Elegant Wedding</h3>
+        <p class="event-date">November 15, 2025</p>
+        <p>Romantic floral designs.</p>
+      </div>
+    </div>
 
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
+    <div class="event-card">
+      <div class="event-image" style="background-image:url('coparateevent.png')"></div>
+      <div class="event-content">
+        <h3>Corporate Gala</h3>
+        <p class="event-date">November 10, 2025</p>
+        <p>Modern professional setups.</p>
+      </div>
+    </div>
 
-        </div>
+    <div class="event-card">
+      <div class="event-image" style="background-image:url('birthdaycelebration.png')"></div>
+      <div class="event-content">
+        <h3>Birthday Celebration</h3>
+        <p class="event-date">November 5, 2025</p>
+        <p>Colorful joyful arrangements.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div class="footer-bottom">
-            © 2025 Lakshan Flora. All Rights Reserved.
-        </div>
-    </footer>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>About Lakshan Flora</h3>
+      <p>Beautiful floral arrangements crafted with care.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact</h3>
+      <p>📞 +94 72 345 6789</p>
+      <p>📧 lakshanflora@gmail.com</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 Lakshan Flora. All Rights Reserved.
+  </div>
+</footer>
 
 </body>
 </html>
