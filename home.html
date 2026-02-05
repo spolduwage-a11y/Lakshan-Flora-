@@ -241,16 +241,26 @@
       margin-top: 1rem;
     }
 
-    .social-icons a {
-      width: 40px;
-      height: 40px;
-      background: #667eea;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-    }
+   .social-icons a {
+    text-decoration: none;
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.facebook { background: #1877f2; }
+.instagram { background: #e4405f; }
+.twitter { background: #1da1f2; }
+.linkedin {background: #0077b5;}
+
+.social-icons a:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
 
     .footer-bottom {
       text-align: center;
@@ -387,11 +397,23 @@
       <p>📧 lakshanflora@gmail.com</p>
 
       <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-      </div>
+    <a href="https://facebook.com" target="_blank" class="facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://instagram.com" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://twitter.com" target="_blank" class="twitter">
+        <i class="fab fa-twitter"></i>
+    </a>
+
+    <a href="https://linkedin.com/in/yourusername" target="_blank" class="linkedin">
+    <i class="fab fa-linkedin-in"></i>
+</a>
+    </a>
+</div>
     </div>
   </div>
 
