@@ -196,21 +196,31 @@ footer {
     margin-top: 1rem;
 }
 
-.social-icon {
-    width: 40px;
-    height: 40px;
-    background: #667eea;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    transition: transform 0.3s;
+.social-icons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+   .social-icons a {
     text-decoration: none;
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.3s;
 }
 
-.social-icon:hover {
-    transform: translateY(-3px);
+.facebook { background: #1877f2; }
+.instagram { background: #e4405f; }
+.twitter { background: #1da1f2; }
+.linkedin {background: #0077b5;}
+
+.social-icons a:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
 }
 
 .footer-bottom {
