@@ -233,28 +233,18 @@
       color: white;
     }
 
-     .social-icons {
-            margin-top: 1rem;
-            display: flex;
-            gap: 1rem;
-        }
+      .social-links { display: flex; gap: 1rem; margin-top: 1rem; }
 
-        .social-icons a {
-            width: 40px;
-            height: 40px;
-            background: #667eea;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 18px;
-        }
+    .social-icon {
+      width: 40px; height: 40px;
+      background: #667eea;
+      border-radius: 50%;
+      display: flex; justify-content: center; align-items: center;
+      color: white; font-size: 18px;
+      transition: 0.3s;
+    }
 
-.social-icons a:hover {
-    opacity: 0.7;
-    transform: scale(1.1);
-}
+    .social-icon:hover { transform: translateY(-3px); }
 
     .footer-bottom {
       text-align: center;
